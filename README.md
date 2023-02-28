@@ -1,1 +1,1 @@
-# Moonvim - Neovim Setup
+# Moonvim - Neovim Setup (Development)
