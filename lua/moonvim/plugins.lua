@@ -18,7 +18,7 @@ if not ok then
 end
 
 lazy.setup({
-  {'sainnhe/gruvbox-material'},
+	{ "sainnhe/gruvbox-material" },
 	{
 		"VonHeikemen/lsp-zero.nvim",
 		dependencies = {
@@ -37,6 +37,7 @@ lazy.setup({
 			"hrsh7th/nvim-cmp",
 		},
 	},
+	{ "jose-elias-alvarez/null-ls.nvim" },
 	{ "akinsho/toggleterm.nvim", version = "*", config = true },
 	{
 		"glepnir/lspsaga.nvim",
@@ -73,7 +74,7 @@ lazy.setup({
 		},
 	},
 
-  "nvim-telescope/telescope-ui-select.nvim",
+	"nvim-telescope/telescope-ui-select.nvim",
 
 	{ "numToStr/Comment.nvim", config = true, event = "BufEnter" },
 	{ "phaazon/hop.nvim", branch = "v2", config = true, event = "BufEnter" },

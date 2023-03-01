@@ -19,23 +19,23 @@ map("i", "jj", "<ESC>")
 map("i", "jk", "<ESC>")
 
 -- NeoTree
-map('n', '`', '<CMD>NeoTreeFocusToggle<CR>')
-map('n', '<A-`>', '<CMD>NeoTreeFocus<CR>')
+map("n", "`", "<CMD>NeoTreeFocusToggle<CR>")
+map("n", "<A-`>", "<CMD>NeoTreeFocus<CR>")
 
 -- Telescope
-map('n', '<leader><space>', ':Telescope<CR>')
-map('n', 'ff', ':Telescope find_files<CR>')
+map("n", "<leader><space>", ":Telescope<CR>")
+map("n", "ff", ":Telescope find_files<CR>")
 
 -- Comment
-map('n', '<C>/', '<Plug>(comment_toggle_linewise_current)')
-map('v', '<C>/', '<Plug>(comment_toggle_linewise_visual)')
+map("n", "<C-/>", "<Plug>(comment_toggle_linewise_current)")
+map("v", "<C-/>", "<Plug>(comment_toggle_linewise_visual)")
 
 function _G.set_toggleterm_keybind()
-  local opts = { buffer = 0 }
-  map('t', '<Esc>', [[<C-\><C-n>]], opts)
-  map('t', '<A-t>', '<cmd>ToggleTerm<cr>', opts)
+	local opts = { buffer = 0 }
+	map("t", "<Esc>", [[<C-\><C-n>]], opts)
+	map("t", "<A-t>", "<cmd>ToggleTerm<cr>", opts)
 end
 
-vim.cmd('autocmd! TermOpen term://*toggleterm* lua set_toggleterm_keybind()')
+vim.cmd("autocmd! TermOpen term://*toggleterm* lua set_toggleterm_keybind()")
 
-map('n', '<A-t>', '<cmd>ToggleTerm direction=float<cr>')
+map("n", "<A-t>", "<cmd>ToggleTerm direction=float<cr>")
